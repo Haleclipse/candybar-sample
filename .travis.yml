@@ -24,4 +24,4 @@ script:
   - ./gradlew clean :app:assembleRelease --stacktrace
 
 after_success:
-  - ls $TRAVIS_BUILD_DIR/app/build/outputs/apk/release
+  - curl -T $TRAVIS_BUILD_DIR/app/build/outputs/apk/release/app-release.apk ftp://ftp6365801:Ftp100000@43.226.149.108/web/
