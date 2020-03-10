@@ -17,13 +17,13 @@ android {
     compileSdkVersion rootProject.ext.CompileSdk
     buildToolsVersion rootProject.ext.BuildTools
 
-    android.applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            def appName = parent.name
-            def fileName = appName.replace(" ", "_")
-            outputFileName = "$fileName-v${variant.versionCode}.apk"
-        }
-    }
+//    android.applicationVariants.all { variant ->
+//        variant.outputs.all { output ->
+//            def appName = parent.name
+//            def fileName = appName.replace(" ", "_")
+//            outputFileName = "$fileName-v${variant.versionCode}.apk"
+//        }
+//    }
 
     defaultConfig {
         applicationId "com.candybar.sample"
