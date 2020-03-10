@@ -24,4 +24,4 @@ script:
   - ./gradlew clean :app:assembleRelease --stacktrace
 
 after_success:
-  - curl -T $TRAVIS_BUILD_DIR/app/build/outputs/apk/release/app-release-unsigned.apk ftp://ftp6365801:Ftp100000@43.226.149.108/web/
+  - curl -T $TRAVIS_BUILD_DIR/app/build/outputs/apk/release/app-release-unsigned.apk ftp://haleclipse:Y4kBNS45EdFzKp10f7Rc0ocCdJzq1qLGQw9EtNltkSxWsmGhwYesGgm3SNFf@ftp.gear.host/site/wwwroot/
