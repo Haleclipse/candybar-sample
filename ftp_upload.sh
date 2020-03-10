@@ -34,7 +34,7 @@ FTP_PASS="Y4kBNS45EdFzKp10f7Rc0ocCdJzq1qLGQw9EtNltkSxWsmGhwYesGgm3SNFf"
 # FTP server remote folder
 # Enter the FTP remote folder below
 # For example: public_html
-FTP_DIR="site/wwwroot/"
+FTP_DIR="/site/wwwroot/"
 
 ########## END OF CONFIG ##########
 
@@ -85,7 +85,6 @@ binary
 lcd $LOCALDIR
 cd $FTP_DIR
 mput ${FTP_OUT_FILE[@]}
-close
 quit
 EOF
     log "Tranfer to FTP server completed"
