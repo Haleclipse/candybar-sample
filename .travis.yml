@@ -21,4 +21,4 @@ before_install:
   - ./gradlew dependencies || true
   
 script:
-  - ./gradlew clean :app:assembleRelease --stacktrace
+  - ./gradlew :app:assembleRelease --stacktrace
