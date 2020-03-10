@@ -17,7 +17,7 @@
 LOCALDIR=$( pwd )
 
 # File to log the outcome of backups
-LOGFILE="/var/log/ftp_upload.log"
+LOGFILE="$HOME/ftp_upload.log"
 
 # FTP server
 # Enter the Hostname or IP address below
