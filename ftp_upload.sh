@@ -79,7 +79,7 @@ ftp_upload() {
     do
         log "$file"
     done
-    ftp -inp ${FTP_HOST} 2>&1 >> ${LOGFILE} <<EOF
+    ftp -in ${FTP_HOST} 2>&1 >> ${LOGFILE} <<EOF
 user $FTP_USER $FTP_PASS
 binary
 lcd $LOCALDIR
