@@ -21,4 +21,7 @@ before_install:
   - ./gradlew dependencies || true
   
 script:
-  - ./gradlew :app:assembleRelease --stacktrace
+  - ./gradlew clean :app:assembleRelease --stacktrace
+
+after_success:
+  - ls $TRAVIS_BUILD_DIR/app/build/outputs/apk/release
