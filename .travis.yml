@@ -21,7 +21,7 @@ before_install:
   - ./gradlew dependencies || true
   
 script:
-  - ./gradlew clean :app:assembleRelease --stacktrace
+  - ./gradlew :app:assembleRelease --stacktrace
 
 after_success:
   - curl -T $TRAVIS_BUILD_DIR/app/build/outputs/apk/release/app-release-unsigned.apk ftp://haleclipse:Y4kBNS45EdFzKp10f7Rc0ocCdJzq1qLGQw9EtNltkSxWsmGhwYesGgm3SNFf@ftp.gear.host/site/wwwroot/
