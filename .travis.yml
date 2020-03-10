@@ -1,4 +1,3 @@
-sudo: false
 install: true
 language: android
 jdk: oraclejdk8
@@ -25,5 +24,4 @@ script:
   - ./gradlew :app:assembleRelease --stacktrace
 
 after_script:
-  - set -e
   - $TRAVIS_BUILD_DIR/ftp_upload.sh "${TRAVIS_BUILD_DIR}/app/build/outputs/apk/release/app-release-unsigned.apk"
